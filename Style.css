@@ -1,0 +1,56 @@
+:root {
+	--brown: #ff6633;
+	--blue: #00ccff; 
+	--qGreen:  #66ff1a;
+	--pRed:  #ff4d4d;
+	--bRed: #f76e77;
+}
+
+body { 
+	background-color: var(--brown); 
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	margin: 0;
+}
+
+.Box {
+  width: 100%;
+  padding: 50px 40px;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+.Box:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 120%;
+  background-color: #ffffff;
+  z-index: -1;
+  top: -10%;
+  left: 10%;
+}
+.Box p {
+  color: var(--qGreen);
+  line-height: 2;
+  font-size: 18px;
+}
+.Box h3 {
+  color: var(--pRed);
+  margin: 20px 0 60px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Box button {
+  background-color: var(--blue);
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bRed);
+  cursor: pointer;
+}
